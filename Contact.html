@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Scrollup.css">
+    <style>
+        
+        .map-container {
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        .container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .container h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .container h2 {
+                font-size: 2rem;
+            }
+        }
+        /* contact */
+
+        .underline-decoration {
+            width: 100px;
+            height: 4px;
+            background-color: #007bff;
+            margin: 0 auto 30px auto;
+            border-radius: 2px;
+            animation: slideIn 1s forwards;
+        }
+
+        .c
+        {
+            background-color:rgb(204, 206, 208);
+            margin-top: 800px;
+        }
+
+        label{
+            color: #000000;
+            font-size: large;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Animals Companion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="Home.html" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donate.html">Donate Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contact -->
+
+    <div class=" c p-4  container " style="margin-top: 100px;">
+        <h2 class="text-center text-dark" >We'd Love to Hear From You</h2>
+        <div class="underline-decoration"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" class="form-control" id="firstName" name="first_name" required>
+                        <div id="firstNameError" class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" class="form-control" id="lastName" name="last_name" required>
+                        <div id="lastNameError" class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div id="emailError" class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" name="phone" pattern="^\d{10}$">
+                        <div id="phoneError" class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        <div id="messageError" class="error-message"></div>
+                    </div>
+
+                  
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="col-md-6 map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31255.320773453312!2d74.63480527604093!3d16.93622262859615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9b8a2a305943d%3A0xd28c48639a13f5!2sIslampur%2C%20Maharashtra%20416944%2C%20India!5e0!3m2!1sen!2sus!4v1697305346113!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Information -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h3 class="text-primary">Animals Companion </h3>
+                    <p>Animals Companion, Sangli is a not-for-profit, legally registered charitable
+                        organisation in India.</p>
+                   
+                </div>
+
+                <!-- Work Section -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Work</h5>
+                    <ul class="list-unstyled">
+                        
+                        <li><a href="#">Medical Care</a></li>
+                        <li><a href="#">Rescues</a></li>
+                        <li><a href="#">Animal Ambulance</a></li>
+                        <li><a href="#">Animals in Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get Involved Section -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Get Involved</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Adoptions</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Donate</a></li>
+                     
+                    </ul>
+                </div>
+
+                <!-- Facilities Section -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Facilities</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Animal Hospital</a></li>
+                        <li><a href="#">Animal Sanctuary</a></li>
+                    </ul>
+                </div>
+
+                <!-- Programs Section -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Programs</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Community Outreach</a></li>
+                        <li><a href="#">Feeding Programs</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Search and Social Media Icons -->
+            <div class="row mt-4">
+                <div class="col-lg-8">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the form fields
+            var firstName = document.getElementById('firstName');
+            var lastName = document.getElementById('lastName');
+            var email = document.getElementById('email');
+            var phone = document.getElementById('phone');
+            var message = document.getElementById('message');
+
+            // Clear previous error messages
+            clearErrors();
+
+            // Validation checks
+            var isValid = true;
+
+            if (firstName.value.trim() === '') {
+                showError('firstNameError', 'Please enter your first name.');
+                isValid = false;
+            }
+            if (lastName.value.trim() === '') {
+                showError('lastNameError', 'Please enter your last name.');
+                isValid = false;
+            }
+            if (!validateEmail(email.value)) {
+                showError('emailError', 'Please enter a valid email address.');
+                isValid = false;
+            }
+            if (phone.value && !phone.value.match(/^\d{10}$/)) {
+                showError('phoneError', 'Please enter a 10-digit phone number.');
+                isValid = false;
+            }
+            if (message.value.trim() === '') {
+                showError('messageError', 'Please enter your message.');
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Form submitted successfully!');
+            }
+        });
+
+        function clearErrors() {
+            document.getElementById('firstNameError').textContent = '';
+            document.getElementById('lastNameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('phoneError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+        }
+
+        function showError(id, message) {
+            document.getElementById(id).textContent = message;
+        }
+
+        function validateEmail(email) {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+    </script>
+</body>
+
+</html>
+
+<script>
+

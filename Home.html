@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals In Treatment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Scrollup.css">
+   
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Animals Companion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Donate.html">Donate Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white d-flex align-items-center" style="background-image: url('https://img.freepik.com/premium-photo/golden-retriever-portrait_487677-32275.jpg?ga=GA1.1.13743233.1721662587&semt=ais_hybrid'); margin-top:60px;">
+        <div class="container">
+            <h1 class="display-4">Help Us Help Them</h1>
+            <p class="lead">Join us in rescuing and providing medical care for animals in need.</p>
+            <a id="supportButton" class="btn btn-primary btn-lg mt-3" href="#">Support Our Cause</a>
+        </div>
+    </section>
+
+<!-- Modal -->
+<div class="modal fade" id="supportModal"  aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="supportModalLabel">Support Our Cause</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Your support helps provide food, shelter, and medical care for rescued animals.</p>
+          <!-- Optional: Add a donation form or payment options here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="Donate.html" class="donate-now">Donate Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Tips Section -->
+    <div class="blog-section" id="blog">
+        <h1>Animal care, tips and more on our blog</h1>
+        <div class="underline-decoration"></div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-post card shadow-sm">
+                        <img src="https://img.freepik.com/premium-photo/veterinarian-is-caring-lambs-sheep-farm_1235831-94433.jpg?ga=GA1.1.13743233.1721662587&semt=ais_hybrid-rr-similar" alt="Introducing a New Pet">
+                        <div class="card-body">
+                            <h5 class="blog-post-title">Introducing a New Pet to Your Existing Companion</h5>
+                            <p class="blog-post-content">Introducing a new pet to a jealous furry friend may take time
+                                and patience, but with the right approach, it can lead to a harmonious household.</p>
+                            <a href="Blog.html" class="read-more">READ THE BLOG POST</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-post card shadow-sm">
+                        <img src="https://img.freepik.com/free-photo/medium-shot-woman-washing-dog_23-2149652692.jpg?ga=GA1.1.13743233.1721662587&semt=ais_hybrid-rr-similar" alt="Taming the Tub">
+                        <div class="card-body">
+                            <h5 class="blog-post-title">Taming the Tub: A Soapy Guide to Bathing Fussy Pets</h5>
+                            <p class="blog-post-content">If you're the proud parent of a fussy (or scaly, or feathery)
+                                friend who sees bath time as an extreme sport, fear not! We've got your back.</p>
+                            <a href="#" class="read-more">READ THE BLOG POST</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-post card shadow-sm">
+                        <img src="https://img.freepik.com/free-photo/veterinarian-taking-care-pet-dog_23-2149198681.jpg?ga=GA1.1.13743233.1721662587&semt=ais_hybrid-rr-similar" alt="Taming the Tricksters">
+                        <div class="card-body">
+                            <h5 class="blog-post-title">How to Give Medicine to Picky Pets: A Simple Guide</h5>
+                            <p class="blog-post-content">Administering medication to our beloved pets can be a real
+                                challenge, especially when dealing with stubborn dogs and cats.</p>
+                            <a href="#" class="read-more">READ THE BLOG POST</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories-section py-5">
+        <div class="container">
+            <h2 class="text-center ">Success Stories</h2>
+            <div class="underline-decoration"></div>
+            <div id="successStoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://img.freepik.com/free-photo/selective-focus-shot-adorable-kooikerhondje-dog_181624-37636.jpg?ga=GA1.1.13743233.1721662587&semt=ais_hybrid" alt="Animal 1" class="img-fluid rounded shadow">
+                            </div>
+                            <div class="col-md-6 d-flex flex-column justify-content-center ">
+                                <h3>Story of Bella</h3>
+                                <p>Bella was found abandoned and injured. After weeks of care and rehabilitation, she found a loving forever home.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://img.freepik.com/free-photo/elephant-walking-road_181624-23124.jpg?ga=GA1.1.13743233.1721662587&semt=ais_hybrid" alt="Animal 2" class="img-fluid rounded shadow">
+                            </div>
+                            <div class="col-md-6 d-flex flex-column justify-content-center">
+                                <h3>Story of Max</h3>
+                                <p>Max was rescued from an abusive situation and needed urgent medical attention. He is now healthy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://img.freepik.com/free-photo/view-adorable-looking-kitten_23-2150886388.jpg?ga=GA1.1.13743233.1721662587&semt=ais_hybrid" alt="Animal 3" class="img-fluid rounded shadow">
+                            </div>
+                            <div class="col-md-6 d-flex flex-column justify-content-center">
+                                <h3>Story of Luna</h3>
+                                <p>Luna was a stray who had never known kindness. With our help, she was rehabilitated and now lives in a caring home.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#successStoriesCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#successStoriesCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Information -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <h3 class="text-primary">Animals Companion </h3>
+          <p>Animals Companion, Sangli is a not-for-profit, legally registered charitable organisation in India.</p>
+          
+        </div>
+  
+        <!-- Work Section -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="text-uppercase">Work</h5>
+          <ul class="list-unstyled">
+           
+            <li><a href="#">Medical Care</a></li>
+            <li><a href="#">Rescues</a></li>
+            <li><a href="#">Animal Ambulance</a></li>
+            <li><a href="#">Animals in Care</a></li>
+          </ul>
+        </div>
+  
+        <!-- Get Involved Section -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="text-uppercase">Get Involved</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Adoptions</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Donate</a></li>
+          
+          </ul>
+        </div>
+  
+        <!-- Facilities Section -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="text-uppercase">Facilities</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Animal Hospital</a></li>
+            <li><a href="#">Animal Sanctuary</a></li>
+          </ul>
+        </div>
+  
+        <!-- Programs Section -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="text-uppercase">Programs</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Community Outreach</a></li>
+            <li><a href="#">Feeding Programs</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Search and Social Media Icons -->
+      <div class="row mt-4">
+        <div class="col-lg-8">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="col-lg-4 text-center">
+          <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollUpBtn" class="scroll-up-btn">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Home.js"></script>
+</body>
+</html>

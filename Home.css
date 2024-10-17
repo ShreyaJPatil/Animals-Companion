@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    height: auto;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: x-large;
+}
+.nav-item
+{
+    font-size: larger;
+}
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+/* Hero Section */
+.hero-section h1 {
+    font-weight: 700;
+    font-size: 2rem; /* Default font size for small screens */
+}
+
+@media (min-width: 576px) { /* Small screens (>= 576px) */
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 768px) { /* Medium screens (>= 768px) */
+    .hero-section h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 992px) { /* Large screens (>= 992px) */
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1200px) { /* Extra large screens (>= 1200px) */
+    .hero-section h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+
+/* blog section */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.blog-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .blog-section h1 {
+        font-size: 2.5rem; /* Slightly smaller font for tablets */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .blog-section h1 {
+        font-size: 2rem; /* Even smaller font for mobile */
+    }
+}
+.blog-post {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-post-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.blog-post-content {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.underline-decoration {
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+    animation: slideIn 1s forwards;
+}
+/* modal */
+
+
+.donate-now {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 6px;
+    display: inline-block;
+}
+@keyframes slideIn {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+
+
+/* Success Stories Section */
+.success-stories-section {
+    text-align: center;
+}
+.success-stories-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .success-stories-section h2 {
+        font-size: 2.5rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .success-stories-section h2 {
+        font-size: 2rem; 
+    }
+}
+
+.carousel-item {
+    transition: transform 0.6s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(113, 112, 112);
+    border-radius: 50%;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+/* Footer */
+.footer {
+    /* background-color: #6c757d; */
+    background-color: rgb(22, 23, 22);
+    color: white;
+    padding: 40px 0;
+    margin-top: 150px;
+  }
+
+  .footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer ul li a:hover {
+    color: #007bff;
+}
+
+  .footer .fab {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+    color: white;
+  }
+
+  .footer .fab:hover {
+    transform: scale(1.2);
+    color: #000000;
+}
+
+  .footer input[type="search"] {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .footer input[type="search"]::placeholder {
+    color: #ccc;
+  }
+
+  .footer button {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+  }
+
+ 

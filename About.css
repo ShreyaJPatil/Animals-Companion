@@ -1,0 +1,55 @@
+
+
+/* about */
+.vision-section {
+    background-color: #92dce6; 
+    padding: 30px;
+    text-align: center;
+  }
+  .vision-section p {
+    margin-bottom: 0;
+  }
+  .donor-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+
+  .donor-section  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .donor-section  h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .donor-section  h2 {
+        font-size: 2rem;
+    }
+}
+.underline-decoration {
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+    animation: slideIn 1s forwards;
+}
+
+  .donor-card {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .donor-card h4 {
+    font-size: 1.25rem;
+  }
+
+ 
